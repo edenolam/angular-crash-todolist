@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <div [ngClass]="setClasses">
+      <p>
+        <label>
+          <input (change)="onToggle(todo)" type="checkbox">
+        </label>
+        {{todo.title}}
+        <button (click)="onDelete(todo)" class="btn btn-danger">x</button>
+      </p>
+    </div>
+  </div>
+</div>
